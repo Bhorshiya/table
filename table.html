@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Table</title>
+<style>
+    /* Styling for the table */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    /* Styling for the hidden row */
+    .hidden {
+        display: none;
+    }
+    /* Styling for two lines */
+    .two-lines {
+        white-space: normal;
+    }
+</style>
+</head>
+<body>
+
+<table id="dataTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td onclick="toggleRow(this)">Bhorshi</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>Bhorshi</td>
+            <td>23</td>
+        </tr>
+    </tbody>
+</table>
+
+<div id="hiddenRowContainer"></div>
+
+<script>
+    function toggleRow(cell) {
+        var content = cell.textContent;
+        if (cell.classList.contains('expanded')) {
+            cell.classList.remove('expanded');
+            cell.textContent = content.split('\n')[0];
+        } else {
+            cell.classList.add('expanded');
+            cell.textContent = content + '\nAdditional content here...';
+        }
+    }
+
+    // Function to check screen resolution and toggle visibility of second column
+    function toggleColumnVisibility() {
+        var table = document.getElementById("dataTable");
+        var hiddenRowContainer = document.getElementById("hiddenRowContainer");
+        var screenWidth = window.innerWidth;
+
+        if (screenWidth < 480) {
+            // Hide second column
+            var rows = table.getElementsByTagName("tr");
+            for (var i = 0; i < rows.length; i++) {
+                var cells = rows[i].getElementsByTagName("td");
+                if (cells.length > 1) {
+                    var clone = rows[i].cloneNode(true);
+                    hiddenRowContainer.appendChild(clone);
+                    rows[i].classList.add("hidden");
+                }
+            }
+        } else {
+            // Show second column
+            var hiddenRows = hiddenRowContainer.querySelectorAll(".hidden");
+            hiddenRows.forEach(function(row) {
+                var clone = row.cloneNode(true);
+                table.querySelector("tbody").appendChild(clone);
+                row.parentNode.removeChild(row);
+            });
+            var rows = table.getElementsByTagName("tr");
+            for (var i = 0; i < rows.length; i++) {
+                rows[i].classList.remove("hidden");
+            }
+        }
+    }
+
+    // Initial call to toggle visibility based on screen resolution
+    toggleColumnVisibility();
+
+    // Event listener for window resize
+    window.addEventListener("resize", toggleColumnVisibility);
+</script>
+
+</body>
+</html>
+
+
+
+!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Table</title>
+<style>
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+        white-space: nowrap;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+
+    .two-lines {
+        white-space: normal;
+    }
+
+    @media (max-width: 480px) {
+        td:nth-child(2), th:nth-child(2) {
+            display: none;
+        }
+    }
+
+    .details-container {
+        display: none;
+    }
+
+    @media (max-width: 480px) {
+        .details-container {
+            display: block;
+        }
+    }
+</style>
+</head>
+<body>
+
+<table id="dataTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Bhorshi</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>Bhorshi</td>
+            <td>23</td>
+        </tr>
+    </tbody>
+</table>
+<div class="details-container"></div>
+
+<script>
+    if (window.innerWidth < 480) {
+        var cells = document.querySelectorAll('#dataTable td:first-child');
+        cells.forEach(function(cell) {
+            cell.addEventListener('click', function() {
+                
+                var content = this.parentNode.querySelector('td:nth-child(2)').textContent;
+                
+                var paragraph = document.createElement('p');
+                paragraph.textContent = 'Age: ' + content;
+                
+                var container = document.createElement('div');
+                container.appendChild(paragraph);
+                this.parentNode.querySelector('.details-container').innerHTML = '';
+                this.parentNode.querySelector('.details-container').appendChild(container);
+                this.parentNode.querySelector('.details-container').style.display = 'block';
+            });
+        });
+    }
+</script>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Table</title>
+<style>
+    /* Styling for the table */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    /* Styling for the hidden row */
+    .hidden-row {
+        display: none;
+    }
+    /* Styling for two lines */
+    .two-lines {
+        white-space: normal;
+    }
+
+    @media (max-width: 480px) {
+        td:nth-child(2), th:nth-child(2) {
+            display: none;
+        }
+    }
+</style>
+</head>
+<body>
+
+<table id="dataTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td onclick="toggleDetails(this)">Bhorshi</td>
+            <td>23</td>
+        </tr>
+        <tr class="hidden-row">
+            <td colspan="2">Age <br>23</td>
+        </tr>
+        <tr>
+            <td>Bhorshi</td>
+            <td>23</td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    function toggleDetails(cell) {
+        var row = cell.parentNode.nextElementSibling;
+        var content = cell.textContent;
+        
+        if (row.classList.contains('hidden-row')) {
+            row.classList.remove('hidden-row');
+            // cell.textContent = content + '\nAdditional content here...';
+            cell.classList.add('two-lines');
+        } else {
+            row.classList.add('hidden-row');
+            cell.textContent = content.split('\n')[0];
+            cell.classList.remove('two-lines');
+        }
+    }
+</script>
+
+</body>
+</html>
