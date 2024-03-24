@@ -1,0 +1,139 @@
+META TAGS
+
+<meta name="title" content=" ">
+<meta name="description" content=" ">
+<meta name="keywords" content=" ">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<meta name="revisit-after" content="10 days">
+<meta name="author" content=" ">
+
+SEO FEATURES
+
+1. Meta page titles
+Meta title tags are HTML elements that provide a brief and concise description of the content on a page to search engines.
+2. Meta Descriptions
+A meta description is an HTML element that provides a summary of the page’s content in search engine results pages (SERPs) and can help improve click-through rates.
+3. Alt Tags on images
+Alt tags describe an image’s content to search engines and are used by visually impaired users who use screen readers.
+4. XML sitemap generation
+An XML sitemap is a file that lists all the pages on your site and helps search engines crawl your site more efficiently.
+5. Robots.txt file
+A robots.txt file tells search engine crawlers which pages or sections of your site to exclude from indexing.
+6. Canonical URLs
+Canonical URLs help prevent duplicate content issues by telling search engines which version of a URL is the preferred one to index.
+
+
+
+
+1. Responsive Design
+A responsive design ensures that your website looks great on desktops, laptops, and any mobile device.
+2. Contact Form
+A contact form is an efficient way for potential customers to get in touch with you without having to leave your site.
+3. Product Gallery
+A product gallery showcases your products and allows customers to view them in detail before making a purchase.
+4. Service Listing
+A service listing provides detailed information about the services you offer which can attract potential customers.
+5. Call to Action
+A call to action encourages visitors to take specific actions like joining your newsletter or buying something.
+6. Customer Testimonial section
+A testimonials section displays positive feedback from satisfied customers which can help build trust in your brand and increase conversions.
+
+
+CONTENT EATURES
+
+7. Headings Hierarchy
+A headings hierarchy helps organize your site or blog content, makes it easier for most visitors to skim through the page, and is essential for content marketing.
+8. Bullet Points
+Bullet points are an effective way to present information in a concise and easy-to-read format.
+9. Internal Links
+Internal links connect pages within your site and help visitors navigate seamlessly throughout your website.
+
+10. Image optimization
+Optimizing images for web use ensures that they load quickly without sacrificing quality.
+11. Video integration
+Video integration can improve engagement on your site by adding a dynamic element to your content.
+
+12. Social Media sharing
+Social media sharing buttons allow visitors to share your content on their social media accounts, increasing your reach and driving traffic back to your site.
+
+HOME PAGE
+
+13. Featured Products
+A featured products section highlights your most popular or newest products and can entice visitors to explore further.
+14. Company Values
+Displaying your company values on the homepage helps build trust with visitors and gives them an idea of what your business stands for.
+15. Latest News
+Including a section for the latest news or updates shows that your business is active and keeps visitors informed about new developments.
+
+16. Newsletter signup
+A newsletter signup form allows visitors to subscribe to updates from your business and can help you build a loyal customer base.
+17. Client logos Showcase
+Showcasing logos of clients, you’ve worked with can help establish credibility and trust with potential customers who may recognize those brands.
+   FOOTER	
+18. Copyright notice
+A copyright notice at the bottom of your website informs visitors that all content on the site is protected by copyright law.
+19. Privacy Policy Link
+Including a link to your privacy policy in the footer ensures that visitors have easy access to important information about how their data is collected and used.
+20. Sitemap Link
+A sitemap link in the footer provides an overview of all pages on your site and helps visitors find what they’re looking for quickly
+21. Social Media Icons
+Social media icons in the footer make it easy for visitors to connect with you on various social media platforms and stay up-to-date on news and updates
+22. Contact Information
+Displaying contact information such as a phone number or email address along with business hours in the footer allows visitors to get in touch with you easily.
+
+
+
+23. Payment Options
+If you sell products or services online, displaying accepted payment options in the footer can give visitors confidence that their transactions will be secure and convenient.
+
+
+
+ABOUT
+
+24. Team Member Bios
+Introducing your team members with bios can help build trust with visitors and give them a sense of who they’ll be working with.
+25. Company History
+Providing a brief history of your company can show visitors how far you’ve come and establish credibility.
+26. Mission Statement
+A clear mission statement communicates your business’s purpose and values to visitors and can help attract like-minded customers
+27. Awards and recognition
+Displaying awards or recognition received by your business can help establish credibility and build trust with potential customers
+28. Partnerships and Affiliations
+Highlighting partnerships or affiliations with other organizations can demonstrate expertise in your industry and expand reach to new audiences.
+29. Community involvements
+Showcasing involvement in the community through sponsorships or volunteer work can demonstrate a commitment to social responsibility and create positive associations for your brand.
+
+INNER PAGE
+
+30. Relates articles
+Displaying related articles on a page can encourage visitors to explore more content on your site and establish you as an authority in your industry.
+31. Sidebar Navigation
+A sidebar navigation menu makes it easy for visitors to navigate through different sections of a page without scrolling back to the top.
+32. FAQ page or Section
+An FAQ page section can answer common questions that customers may have and provide them with the information they need to make a purchase decision.
+
+
+FEATURES TO AVOID
+
+* Auto play videos
+* Too many pop-ups
+* Complicated Navigation
+* Slow load times
+* Small fonts
+* Broken links
+* Background music
+
+10 FEATURES
+
+1. Easy to navigate menu
+2. Include search bar
+3. Consistently Publish New Content
+4. Make Calls to Action
+5. Publish Powerful Testimonials
+6. Add Social Media Links to your Footer
+7. Use Clean design
+8. Mobile responsive
+9. Apply SEO 
+10. Use images and videos
